@@ -1,0 +1,72 @@
+:root {
+    --gold: linear-gradient(135deg, #D4AF37 0%, #B8860B 100%);
+    --red: #E31E24;
+    --dark: #000000;
+    --dark-grey: #0E0E0F;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; -webkit-font-smoothing: antialiased; }
+body { background: var(--dark); color: #FFF; font-family: 'Plus Jakarta Sans', sans-serif; }
+.container { padding: 0 25px; margin: auto; }
+
+/* HEADER */
+.glass-nav {
+    background: rgba(0,0,0,0.9); backdrop-filter: blur(20px);
+    padding: 15px 25px; position: sticky; top: 0; z-index: 100;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+.nav-content { display: flex; justify-content: space-between; align-items: center; }
+.main-logo { height: 50px; border-radius: 10px; }
+.logo-text h1 { font-size: 16px; font-weight: 800; letter-spacing: 1px; }
+.tagline { font-size: 8px; color: var(--red); font-weight: 700; letter-spacing: 1.5px; }
+.status-indicator { font-size: 10px; font-weight: 700; color: #555; display: flex; align-items: center; gap: 8px; }
+.pulse-dot { width: 6px; height: 6px; background: #00FF41; border-radius: 50%; }
+
+/* HERO (BANNER AJUSTADO) */
+.hero-v7 { height: 300px; background: url('img/banner_long\ blac.png') center/cover; position: relative; display: flex; align-items: center; }
+.hero-overlay-dark { position: absolute; inset: 0; background: rgba(0,0,0,0.7); } /* Escurecido para destacar o texto */
+.hero-content { position: relative; z-index: 2; padding: 0 25px; }
+.top-label { font-size: 9px; font-weight: 800; color: var(--red); letter-spacing: 4px; display: block; margin-bottom: 12px; }
+.hero-content h2 { font-size: 26px; font-weight: 400; line-height: 1.2; }
+.hero-content h2 strong { font-weight: 800; color: #FFF; }
+.hero-sub { font-size: 14px; color: #999; margin-top: 15px; font-weight: 300; }
+
+/* BOTÃO DE OURO */
+.cta-wrapper { margin-top: -35px; position: relative; z-index: 10; }
+.btn-gold-action {
+    display: flex; justify-content: space-between; align-items: center;
+    background: var(--gold); color: #000; text-decoration: none;
+    padding: 22px 25px; border-radius: 8px; font-weight: 800; font-size: 13px;
+    letter-spacing: 1px; box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+}
+
+/* BANNER DE PEÇAS */
+.parts-banner { background: var(--dark-grey); margin: 30px 0; padding: 20px; border-radius: 15px; border-left: 4px solid var(--red); }
+.parts-content { display: flex; align-items: center; gap: 15px; }
+.parts-content i { font-size: 24px; color: var(--red); }
+.parts-content h4 { font-size: 15px; font-weight: 800; margin-bottom: 3px; }
+.parts-content p { font-size: 12px; color: #777; line-height: 1.4; }
+
+/* ESPECIALIDADES */
+.spec-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 30px 0; }
+.spec-card { background: var(--dark-grey); padding: 15px 0; text-align: center; border-radius: 12px; border: 1px solid rgba(255,255,255,0.03); }
+.spec-card i { font-size: 18px; color: var(--red); margin-bottom: 8px; display: block; }
+.spec-card span { font-size: 8px; font-weight: 700; color: #888; text-transform: uppercase; }
+
+/* FORMULÁRIO */
+.booking-glass-card { background: #FFF; color: #000; padding: 35px 25px; border-radius: 35px; margin-bottom: 40px; }
+.booking-head h3 { font-size: 24px; font-weight: 800; letter-spacing: -1px; }
+.booking-head p { font-size: 13px; color: #777; margin: 10px 0 25px; }
+.input-group { margin-bottom: 18px; }
+.input-group label { font-size: 9px; font-weight: 800; color: #AAA; margin-bottom: 8px; display: block; }
+input, select { width: 100%; padding: 18px; background: #F8F9FB; border: 1px solid #EEE; border-radius: 14px; font-size: 14px; font-family: inherit; }
+.btn-submit-lux { width: 100%; padding: 22px; background: #000; color: #fff; border: none; border-radius: 15px; font-weight: 800; font-size: 14px; display: flex; justify-content: center; align-items: center; gap: 12px; }
+
+/* MAPA */
+.section-tag { font-size: 14px; color: var(--red); letter-spacing: 2px; font-weight: 800; margin-bottom: 15px; text-transform: uppercase; }
+.map-card-lux { background: var(--dark-grey); border-radius: 20px; overflow: hidden; border: 1px solid rgba(255,255,255,0.05); }
+.map-info { padding: 15px; font-size: 12px; color: #888; }
+.iframe-container { height: 250px; filter: grayscale(1) contrast(1.2); }
+.btn-gps-red { display: block; background: var(--red); color: #fff; text-align: center; padding: 20px; text-decoration: none; font-weight: 800; }
+
+.footer-minimal { text-align: center; padding: 50px 0; font-size: 10px; color: #444; font-weight: 800; letter-spacing: 2px; }
